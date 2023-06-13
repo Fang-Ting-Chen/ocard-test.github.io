@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen10</title>
+    <style>
+        .arrow {
+            background-color: #F5F6FA;
+            border-radius: 50%;
+            border-style: none;
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            left: 20px;
+            top: 45px;
+            display: inline-block;
+
+        }
+
+        .header-title {
+            display: inline-block;
+            position: absolute;
+            width: 69px;
+            height: 19px;
+            left: 153px;
+            top: 45px;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .reviews {
+            position: absolute;
+            width: 92px;
+            height: 17px;
+            left: 20px;
+            top: 115px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        .rating1 {
+            position: absolute;
+            width: 20px;
+            height: 14px;
+            left: 20px;
+            top: 137px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 110%;
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        .s1 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 42px;
+            top: 152px;
+
+        }
+
+        .s2 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 53px;
+            top: 152px;
+        }
+
+        .s3 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 64px;
+            top: 152px;
+        }
+
+        .s4 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 75px;
+            top: 152px;
+        }
+
+        .s5 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 86px;
+            top: 152px;
+        }
+
+        .addReview {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 3px;
+            gap: 5px;
+
+            position: absolute;
+            width: 114px;
+            height: 35px;
+            left: 241px;
+            top: 123px;
+
+            background: #FF7043;
+            border-radius: 5px;
+            
+        }
+
+        .edit {
+            position: absolute;
+            left: 8%;
+            right: 10.06%;
+            top: 30%;
+            bottom: 9.91%;
+            width: 15px;
+            height: 15px;
+        }
+
+        .addReviewText {
+            position: absolute;
+            left: 30%;
+            width: 74px;
+            height: 14px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 110%;
+            color: #FEFEFE;
+            font-family: 'Arial';
+        }
+
+        .name1 {
+            position: absolute;
+            width: 96px;
+            height: 17px;
+            left: 70px;
+            top: 183px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .clock1 {
+            position: absolute;
+            left: 16%;
+            top: 218px;
+            bottom: 12.5%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .time1 {
+            position: absolute;
+            width: 80px;
+            height: 11px;
+            left: 90px;
+            top: 207px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 100%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .rating2 {
+            position: absolute;
+            width: 23px;
+            height: 17px;
+            left: 296px;
+            top: 184px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .ratingTxt2 {
+            position: absolute;
+            width: 31px;
+            height: 12px;
+            left: 324px;
+            top: 187px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .s21 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 296px;
+            top: 216px;
+
+        }
+
+        .s22 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 307px;
+            top: 216px;
+        }
+
+        .s23 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 318px;
+            top: 216px;
+
+        }
+
+        .s24 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 329px;
+            top: 216px;
+        }
+
+        .s25 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 340px;
+            top: 216px;
+        }
+
+        .comText1 {
+            position: absolute;
+            width: 334px;
+            height: 63px;
+            left: 20px;
+            top: 231px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+
+        .name2 {
+            position: absolute;
+            width: 120px;
+            height: 17px;
+            left: 70px;
+            top: 316px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .clock2 {
+            position: absolute;
+            left: 16%;
+            top: 44.2%;
+            bottom: 12.5%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .time2 {
+            position: absolute;
+            width: 80px;
+            height: 11px;
+            left: 90px;
+            top: 340px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 100%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .rating3 {
+            position: absolute;
+            width: 23px;
+            height: 17px;
+            left: 296px;
+            top: 317px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .ratingTxt3 {
+            position: absolute;
+            width: 31px;
+            height: 12px;
+            left: 324px;
+            top: 320px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .s31 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 296px;
+            top: 350px;
+
+        }
+
+        .s32 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 307px;
+            top: 350px;
+        }
+
+        .s33 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 318px;
+            top: 350px;
+
+        }
+
+        .s34 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 329px;
+            top: 350px;
+        }
+
+        .s35 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 340px;
+            top: 350px;
+        }
+
+        .comText2 {
+            position: absolute;
+            width: 334px;
+            height: 63px;
+            left: 20px;
+            top: 364px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+
+        .name3 {
+            position: absolute;
+            width: 120px;
+            height: 17px;
+            left: 70px;
+            top: 449px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .clock3 {
+            position: absolute;
+            left: 16%;
+            top: 61%;
+            bottom: 12.5%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .time3 {
+            position: absolute;
+            width: 80px;
+            height: 11px;
+            left: 90px;
+            top:  473px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 100%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .rating4 {
+            position: absolute;
+            width: 23px;
+            height: 17px;
+            left: 296px;
+            top: 450px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .ratingTxt4 {
+            position: absolute;
+            width: 31px;
+            height: 12px;
+            left: 324px;
+            top: 453px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .s41 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 296px;
+            top: 483px;
+
+        }
+
+        .s42 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 307px;
+            top: 483px;
+        }
+
+        .s43 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 318px;
+            top: 483px;
+
+        }
+
+        .s44 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 329px;
+            top: 483px;
+        }
+
+        .s45 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 340px;
+            top: 483px;
+        }
+
+        .comText3 {
+            position: absolute;
+            width: 334px;
+            height: 63px;
+            left: 20px;
+            top: 497px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .name4 {
+            position: absolute;
+            width: 130px;
+            height: 17px;
+            left: 70px;
+            top: 582px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .clock4 {
+            position: absolute;
+            left: 16%;
+            top: 77.8%;
+            bottom: 12.5%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .time4 {
+            position: absolute;
+            width: 80px;
+            height: 11px;
+            left: 90px;
+            top:  606px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 100%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .rating5 {
+            position: absolute;
+            width: 23px;
+            height: 17px;
+            left: 296px;
+            top: 583px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .ratingTxt5 {
+            position: absolute;
+            width: 31px;
+            height: 12px;
+            left: 324px;
+            top: 586px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        .s51 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 296px;
+            top: 615px;
+
+        }
+
+        .s52 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 307px;
+            top: 615px;
+        }
+
+        .s53 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 318px;
+            top: 615px;
+
+        }
+
+        .s54 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 329px;
+            top: 615px;
+        }
+
+        .s55 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 340px;
+            top: 615px;
+        }
+
+        .comText4 {
+            position: absolute;
+            width: 334px;
+            height: 63px;
+            left: 20px;
+            top: 630px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+        .com1{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 195px;
+            left: 20px;
+
+        }
+        .com2{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 325px;
+            left: 20px;
+
+        }
+        .com3{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 460px;
+            left: 20px;
+
+        }
+        .com4{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 595px;
+            left: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <input type="button" onclick="" value="&#8592" class="arrow">
+        <p class="header-title">Reviews</p>
+    </div>
+
+    <p class="reviews">245 Reviews</p>
+    <p class="rating1">4.8</p>
+    <img src="icon/star.png" alt="star" class="s1">
+    <img src="icon/star.png" alt="star" class="s2">
+    <img src="icon/star.png" alt="star" class="s3">
+    <img src="icon/star.png" alt="star" class="s4">
+    <img src="icon/rating.png" alt="star" class="s5">
+
+    <div class="addReview">
+        <img src="icon/edit1.png" alt="edit" class="edit">
+        <p class="addReviewText">Add Review</p>
+    </div>
+
+    <div class="comment1">
+        <img src="icon/com.jpg" alt="photo1" class="com1">
+        <p class="name1">Jenny Wilson</p>
+        <img src="icon/clock.png" alt="clock" class="clock1">
+        <p class="time1">13 Sep, 2020</p>
+        <p class="rating2">4.8</p>
+        <p class="ratingTxt2">rating</p>
+        <img src="icon/star.png" alt="star" class="s21">
+        <img src="icon/star.png" alt="star" class="s22">
+        <img src="icon/star.png" alt="star" class="s23">
+        <img src="icon/star.png" alt="star" class="s24">
+        <img src="icon/rating.png" alt="star" class="s25">
+        <p class="comText1">Lorem ipsum dolor sit amet,consectetur<br>
+            adipiscing edit.Pellentesque malesuada eget vitae amet...
+        </p>
+    </div>
+
+    <div class="comment2">
+        <img src="icon/comTwo.jpg" alt="photo2" class="com2">
+        <p class="name2">Ronald Richards</p>
+        <img src="icon/clock.png" alt="clock" class="clock2">
+        <p class="time2">13 Sep, 2020</p>
+        <p class="rating3">4.8</p>
+        <p class="ratingTxt3">rating</p>
+        <img src="icon/star.png" alt="star" class="s31">
+        <img src="icon/star.png" alt="star" class="s32">
+        <img src="icon/star.png" alt="star" class="s33">
+        <img src="icon/star.png" alt="star" class="s34">
+        <img src="icon/rating.png" alt="star" class="s35">
+        <p class="comText2">Lorem ipsum dolor sit amet,consectetur<br>
+            adipiscing edit.Pellentesque malesuada eget vitae amet...
+        </p>
+    </div>
+
+    <div class="comment3">
+        <img src="icon/comThree.jpg" alt="photo3" class="com3">
+        <p class="name3">Guy Hawkins</p>
+        <img src="icon/clock.png" alt="clock" class="clock3">
+        <p class="time3">13 Sep, 2020</p>
+        <p class="rating4">4.8</p>
+        <p class="ratingTxt4">rating</p>
+        <img src="icon/star.png" alt="star" class="s41">
+        <img src="icon/star.png" alt="star" class="s42">
+        <img src="icon/star.png" alt="star" class="s43">
+        <img src="icon/star.png" alt="star" class="s44">
+        <img src="icon/rating.png" alt="star" class="s45">
+        <p class="comText3">Lorem ipsum dolor sit amet,consectetur<br>
+            adipiscing edit.Pellentesque malesuada eget vitae amet...
+        </p>
+    </div>
+
+    <div class="comment4">
+        <img src="icon/comFour.jpg" alt="photo4" class="com4">
+        <p class="name4">Savannah Nguyen</p>
+        <img src="icon/clock.png" alt="clock" class="clock4">
+        <p class="time4">13 Sep, 2020</p>
+        <p class="rating5">4.8</p>
+        <p class="ratingTxt5">rating</p>
+        <img src="icon/star.png" alt="star" class="s51">
+        <img src="icon/star.png" alt="star" class="s52">
+        <img src="icon/star.png" alt="star" class="s53">
+        <img src="icon/star.png" alt="star" class="s54">
+        <img src="icon/rating.png" alt="star" class="s55">
+        <p class="comText4">Lorem ipsum dolor sit amet,consectetur<br>
+            adipiscing edit.Pellentesque malesuada eget vitae amet...
+        </p>
+    </div>
+
+
+</body>
+
+</html>

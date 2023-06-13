@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen13</title>
+    <style>
+        .arrow{
+            background-color: #F5F6FA;
+            border-radius: 50%;
+            border-style: none;
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            left: 20px;
+            top: 45px;
+            display: inline-block;
+
+        }
+        .header-title{
+            display: inline-block;
+            position: absolute;
+            width: 69px;
+            height: 19px;
+            left: 153px;
+            top: 45px;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        label[for='name']{
+            position: absolute;
+            width: 48px;
+            height: 19px;
+            left: 20px;
+            top: 115px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        #name{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 10px 5px 15px;
+            gap: 10px;
+
+            position: absolute;
+            width: 335px;
+            height: 50px;
+            left: 20px;
+            top: 144px;
+
+            background: #F5F6FA;
+            border-radius: 10px;
+
+            border-style: none;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial'; 
+        }
+
+        label[for='country']{
+            position: absolute;
+            width: 66px;
+            height: 19px;
+            left: 20px;
+            top: 209px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        #country{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 0px 5px 15px;
+            gap: 10px;
+
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            left: 20px;
+            top: 238px;
+
+            background: #F5F6FA;
+            border-radius: 10px;
+
+            border-style: none;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        label[for='city']{
+            position: absolute;
+            width: 33px;
+            height: 19px;
+            left: 195px;
+            top: 209px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+            color: #1D1E20;
+            font-family: 'Arial';
+            
+        }
+
+        #city{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 10px 5px 15px;
+            gap: 10px;
+
+            position: absolute;
+            width: 160px;
+            height: 50px;
+            left: 195px;
+            top: 238px;
+
+            background: #F5F6FA;
+            border-radius: 10px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+
+            color: #8F959E;
+
+            border-style: none;
+            font-family: 'Arial';
+        }
+
+        label[for='phone']{
+            position: absolute;
+            width: 121px;
+            height: 19px;
+            left: 20px;
+            top: 303px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        #phone{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px 200px 20px 15px;
+            gap: 10px;
+
+            position: absolute;
+            width: 335px;
+            height: 50px;
+            left: 20px;
+            top: 332px;
+
+            background: #F5F6FA;
+            border-radius: 10px;
+
+            width: 140px;
+            height: 17px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+
+            color: #8F959E;
+            border-style: none;
+        }
+
+        label[for='address']{
+            position: absolute;
+            width: 68px;
+            height: 19px;
+            left: 20px;
+            top: 397px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        #address{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 10px 5px 15px;
+            gap: 10px;
+
+            position: absolute;
+            width: 335px;
+            height: 50px;
+            left: 20px;
+            top: 426px;
+
+            background: #F5F6FA;
+            border-radius: 10px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+
+            color: #8F959E;
+            border-style: none;
+            font-family: 'Arial';
+
+        }
+
+        .save_as{
+            position: absolute;
+            width: 177px;
+            height: 17px;
+            left: 20px;
+            top: 496px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            font-family: 'Arial';
+        }
+
+        .checkbox {
+            display: none;
+
+        }
+        .switch {
+            width: 45px;
+            height: 25px;
+            background: #4BC76D;
+            border-radius: 30px;
+            padding: 1px;
+            box-sizing: border-box;
+            display: inline-block;
+
+            position: absolute;
+            left: 310px;
+            top: 510px;         
+        
+        }
+        .switch:after {
+            content: '';
+            box-shadow: 0px 4px 4px -8px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.1);
+            width: 21px;
+            height: 21px;
+            background: #FEFEFE;
+            border-radius: 50%;
+            display: block;
+            margin-left: 20px;
+            float: left;
+            transition: all 0.5s;
+            margin-top: 1px;
+        }
+        .checkbox:checked+.switch:after {
+            margin-left: 1px;
+        }
+        .checkbox:checked+.switch {
+            background: #ccc;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 15px 10px 10px;
+            gap: 10px;
+
+            position: absolute;
+            width: 375px;
+            height: 75px;
+            left: 0px;
+            top: 737px;
+
+            background: #9775FA;
+        }
+
+        .save_ad{
+            width: 112px;
+            height: 19px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+
+            color: #FEFEFE;
+            font-family: 'Arial';
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <input type="button" onclick="" value="&#8592" class="arrow">
+        <p class="header-title">Address</p>
+    </div>
+    
+    <div class="main">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="Mrh Raju">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" value="Bangladesh">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" value="Sylhet">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" value="+880 1453-987533">
+            <label for="address">Address</label>
+            <input for="text" id="address" name="address" value="Chhatak, Sunamgonj 12/8AB">
+        </form>
+        <p class="save_as">Save as primary address</p>
+        <input type="checkbox" id="1" class="checkbox">
+        <label class="switch" for="1"></label>
+    </div>
+
+    <div class="footer">
+        <p class="save_ad">Save Address</p>
+    </div>
+
+</body>
+</html>

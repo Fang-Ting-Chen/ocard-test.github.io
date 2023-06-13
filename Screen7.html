@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen7</title>
+    <style>
+        .arrow{
+            background-color: #F5F6FA;
+            border-radius: 50%;
+            border-style: none;
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            left: 20px;
+            top: 45px;
+            display: inline-block;
+
+        }
+        .header-title{
+            position: absolute;
+            left: 23.47%;
+            right: 23.47%;
+            top: 12.93%;
+            bottom: 83.25%;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 110%;
+            letter-spacing: -0.0075em;
+            color: #1D1E20;
+            font-family: 'Arial';
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 15px 10px 10px;
+            gap: 10px;
+
+            position: absolute;
+            width: 375px;
+            height: 75px;
+            left: 0px;
+            top: 737px;
+
+            background: #9775FA;
+        }
+
+        .reset{
+            width: 131px;
+            height: 19px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 110%;
+
+            color: #FEFEFE;
+            font-family: 'Arial';  
+        }
+
+        label[for='pwd']{
+            position: absolute;
+            width: 60px;
+            height: 14px;
+            left: 20px;
+            top: 322px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 110%;
+
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        #pwd{
+            position: absolute;
+            width: 101px;
+            height: 17px;
+            left: 20px;
+            top: 351px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            color: #1D1E20;
+            border-style: none;
+            font-family: 'Arial';
+            
+        }
+
+        .hr1{
+            position: absolute;
+            width: 335px;
+            height: 0px;
+            left: 20px;
+            top: 383px;
+
+            border: 1px solid #E7E8EA;
+        }
+
+        label[for='cpwd']{
+            position: absolute;
+            width: 113px;
+            height: 14px;
+            left: 20px;
+            top: 403px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 110%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+        #cpwd{
+            position: absolute;
+            width: 101px;
+            height: 17px;
+            left: 20px;
+            top: 432px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 110%;
+            color: #1D1E20;
+            border-style: none;
+            font-family: 'Arial';
+        }
+
+        .hr2{
+            position: absolute;
+            width: 335px;
+            height: 0px;
+            left: 20px;
+            top: 464px;
+
+            border: 1px solid #E7E8EA;
+        }
+        .ftext{
+            position: absolute;
+            width: 202px;
+            height: 18px;
+            left: 115px;
+            top: 694px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            color: #8F959E;
+            font-family: 'Arial';
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <input type="button" onclick="" value="&#8592" class="arrow">
+        <p class="header-title">New Password</p>
+    </div>
+
+    <form>
+        <label for="pwd">Passwoed</label>
+        <input trpe="password" id="pwd" name="pwd" value="HJ@#9783kja">
+        <hr class="hr1">
+        <label for="cpwd">Confirm Passwoed</label>
+        <input trpe="password" id="cpwd" name="cpwd" value="HJ@#9783kja">
+        <hr class="hr2">
+    </form>
+
+    <p class="ftext">Please write your new password.</p>
+    <div class="footer">
+        <p class="reset">Reset&#8194Password</p>
+    </div>
+    
+</body>
+</html>
